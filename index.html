@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Metals</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    /* CSS reset */
+    body{
+        font-family: 'Redressed', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/c.jpg');
+        height: 45444px;
+    }
+    .left{
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .left img{
+        width: 136px;
+        filter: invert(100%);
+
+    }
+    .left div{
+        text-align: center;
+        line-height: 12px;
+        font-size: 26px;
+    }
+    .mid{
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+        
+        /* border: 2px solid red; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .btn{
+        font-family: 'Redressed', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: #661f05;
+        padding: 4px 14px;
+        /* border: 2px solid grey; */
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .btn:hover{
+        background-color: rgb(232, 228, 228);
+        color: black;
+    }
+    .navbar{
+        display: inline-block;
+        border: 1px solid #b3a284;
+        padding: 8px;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        padding: 25px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        /* color: rgb(250, 193, 8); */
+        color: #b37601;
+    }
+
+    /* #rohan{
+        position: fixed;
+        top: 2px;
+    } */
+
+    .container{
+        border: 2px solid #bcb4b2;
+        margin: 226px 70px;
+        border-radius: 10px;
+        padding: 75px;
+        width: 33%;
+        color: white;
+        
+    }
+    .formgroup input{
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Redressed', cursive;
+        margin: 11px auto;
+        text-align: center;
+        display: block;
+        padding: 2px;
+        border: 2px soild black;
+    }
+    .container h1{
+        text-align: center;
+        color: white;
+    }
+    .container button{
+        display: block;
+    width: 55%;
+    margin: 21px 98px;
+    display: block;
+    border-radius: 14px;
+    padding-inline-end: 2px;
+    }
+    .product{
+        /* border: 2px solid black; */
+    margin: 0px 403px;
+    border-radius: 10px;
+    padding: 57px;
+    width: 61%;
+    color: black;
+    background-color: #c9c5c4;
+    }
+    .product h1{
+        text-align: center;
+        font-family: 'Redressed', cursive;
+        
+    }
+    .product img{
+        width: 239px;
+    padding: 14px;
+    display: inline-block;
+    /* width: 32%; */
+    margin: 20px 2px;
+    }
+    .product div{
+        /* filter: invert(100%);
+        display: inline-block; */
+        /* border: 2px solid #bcb4b2;
+        margin: 226px 70px;
+        border-radius: 10px;
+        padding: 75px;
+        width: 33%;
+        color: white; */
+        display: block;
+    }
+    .address{
+        border: 2px solid #fbcf6f;
+        padding: 8px;
+        width: 150px;
+        margin: 8px;
+        display: block;
+        /* color: white; */
+        background-color: #f3b736;
+        border-radius: 18px;
+        text-align: center;
+        
+    }
+    #box{
+        position: fixed;
+        bottom: 2px;
+        right: 2px;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/d.png" alt="">
+            <div>U.S Metals</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar" id="rohan">
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="#"> About Us </a></li>
+                <!-- <li> <a href="#"> Metals </a> </li> -->
+                <li> <a href="#"> Contact Us </a></li>
+            </ul> 
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="address" id='box'>
+        <p>Visit our Shop <br>
+        U.S.Polekar Maratha Market, <br>
+        Ambegaon bk, <br>
+        Pune-46.
+        </p>
+    </div>
+
+    <div class="container">
+        <h1>Login to Shop Now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter you name">
+                <input type="text" name="" placeholder="Enter you place">
+                <input type="number" name="" placeholder="Enter you phone number">
+                <input type="email" name="" placeholder="Enter you email id">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="product">
+        <h1>Our products</h1>
+        <img src="img/a.jpg" alt="">
+        <img src="img/d.jpg" alt="">
+        <img src="img/e.jpg" alt="">
+        <img src="img/f.jpg" alt="">
+        <img src="img/g.jpg" alt="">
+        <img src="img/h.jpg" alt="">
+        <img src="img/i.jpg" alt="">
+        <img src="img/j.jpg" alt="">
+        <img src="img/k.jpg" alt="">
+        <img src="img/l.jpg" alt="">
+        <img src="img/m.jpg" alt="">
+        <img src="img/n.jpg" alt="">
+    </div>
+    
+</body>
+</html>
